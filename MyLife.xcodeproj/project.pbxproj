@@ -14,6 +14,8 @@
 		ACDC50E91ACAA1620034F9A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACDC50E81ACAA1620034F9A1 /* Images.xcassets */; };
 		ACDC50EC1ACAA1620034F9A1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACDC50EA1ACAA1620034F9A1 /* LaunchScreen.xib */; };
 		ACDC50F81ACAA1620034F9A1 /* MyLifeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDC50F71ACAA1620034F9A1 /* MyLifeTests.m */; };
+		ACDC51041ACAE3B00034F9A1 /* DBHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDC51031ACAE3B00034F9A1 /* DBHandler.m */; };
+		ACDC51071ACAE4F80034F9A1 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDC51061ACAE4F80034F9A1 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		ACDC50F11ACAA1620034F9A1 /* MyLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACDC50F61ACAA1620034F9A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACDC50F71ACAA1620034F9A1 /* MyLifeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyLifeTests.m; sourceTree = "<group>"; };
+		ACDC51031ACAE3B00034F9A1 /* DBHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBHandler.m; sourceTree = "<group>"; };
+		ACDC51051ACAE3CC0034F9A1 /* DBHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBHandler.h; sourceTree = "<group>"; };
+		ACDC51061ACAE4F80034F9A1 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACDC51071ACAE4F80034F9A1 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,7 @@
 		ACDC50CF1ACAA1620034F9A1 = {
 			isa = PBXGroup;
 			children = (
+				ACDC51061ACAE4F80034F9A1 /* libsqlite3.dylib */,
 				ACDC50DA1ACAA1620034F9A1 /* MyLife */,
 				ACDC50F41ACAA1620034F9A1 /* MyLifeTests */,
 				ACDC50D91ACAA1620034F9A1 /* Products */,
@@ -89,6 +96,8 @@
 				ACDC50E81ACAA1620034F9A1 /* Images.xcassets */,
 				ACDC50EA1ACAA1620034F9A1 /* LaunchScreen.xib */,
 				ACDC50DB1ACAA1620034F9A1 /* Supporting Files */,
+				ACDC51031ACAE3B00034F9A1 /* DBHandler.m */,
+				ACDC51051ACAE3CC0034F9A1 /* DBHandler.h */,
 			);
 			path = MyLife;
 			sourceTree = "<group>";
@@ -221,6 +230,7 @@
 			files = (
 				ACDC50E41ACAA1620034F9A1 /* ViewController.m in Sources */,
 				ACDC50E11ACAA1620034F9A1 /* AppDelegate.m in Sources */,
+				ACDC51041ACAE3B00034F9A1 /* DBHandler.m in Sources */,
 				ACDC50DE1ACAA1620034F9A1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
