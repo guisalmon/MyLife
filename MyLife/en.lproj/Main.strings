@@ -1,0 +1,33 @@
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "4HL-Ou-PjX"; */
+"4HL-Ou-PjX.title" = "Title";
+
+/* Class = "UIButton"; normalTitle = "View"; ObjectID = "9Z0-zl-kHb"; */
+"9Z0-zl-kHb.normalTitle" = "View";
+
+/* Class = "UIBarButtonItem"; title = "Gallery"; ObjectID = "F4W-Wa-o4W"; */
+"F4W-Wa-o4W.title" = "Gallery";
+
+/* Class = "UIBarButtonItem"; title = "Camera"; ObjectID = "OTu-Ji-sfx"; */
+"OTu-Ji-sfx.title" = "Camera";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "Q0f-ED-SfU"; */
+"Q0f-ED-SfU.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UIBarButtonItem"; title = "Home"; ObjectID = "Voy-yd-ToG"; */
+"Voy-yd-ToG.title" = "Home";
+
+/* Class = "UIBarButtonItem"; title = "Voiceover"; ObjectID = "WU7-qT-Vln"; */
+"WU7-qT-Vln.title" = "Voiceover";
+
+/* Class = "UIButton"; normalTitle = "Add"; ObjectID = "b1Z-no-1Qi"; */
+"b1Z-no-1Qi.normalTitle" = "Add";
+
+/* Class = "UIBarButtonItem"; title = "Settings"; ObjectID = "gfJ-YY-04W"; */
+"gfJ-YY-04W.title" = "Settings";
+
+/* Class = "UILabel"; text = "My Life"; ObjectID = "s8V-KC-XhK"; */
+"s8V-KC-XhK.text" = "My Life";
+
+/* Class = "UIBarButtonItem"; title = "Video"; ObjectID = "y7P-nK-udc"; */
+"y7P-nK-udc.title" = "Video";
