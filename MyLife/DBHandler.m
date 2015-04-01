@@ -43,7 +43,7 @@ static sqlite3_stmt *statement = nil;
         {
             char *errMsg;
             const char *sql_stmt =
-            "create table if not exists postDetail (idno integer primary key, date text, title text, text text)";
+            "create table if not exists postDetail (idno integer primary key autoincrement, date text, title text, text text)";
             if (sqlite3_exec(database, sql_stmt, NULL, NULL, &errMsg)
                 != SQLITE_OK)
             {
@@ -70,7 +70,7 @@ static sqlite3_stmt *statement = nil;
     const char *dbpath = [databasePath UTF8String];
     
     if (sqlite3_open(dbpath, &database) == SQLITE_OK) {
-        NSString *insertSQL = [NSString stringWithFormat:@"insert into postDetail (idno,name, department, year) values (\"%ld\",\"%@\", \"%@\", \"%@\")",(long)[idNumber integerValue], date, title, text];
+        NSString *insertSQL = [NSString stringWithFormat:@"insert into postDetail (date, title, text) values (\"%@\", \"%@\", \"%@\")", date, title, text];
         const char *insert_stmt = [insertSQL UTF8String];
         sqlite3_prepare_v2(database, insert_stmt,-1, &statement, NULL);
         
