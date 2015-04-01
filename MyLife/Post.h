@@ -10,7 +10,6 @@
 #define MyLife_Post_h
 
 #import <Foundation/Foundation.h>
-#import <stdlib.h>
 
 @interface Post : NSObject {
     @private

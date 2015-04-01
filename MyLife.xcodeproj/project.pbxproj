@@ -16,6 +16,7 @@
 		AC6C6DFF1ACC27CE005F274A /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6C6DFE1ACC27CE005F274A /* libc++.dylib */; };
 		AC6C6E011ACC27EB005F274A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6C6E001ACC27EB005F274A /* libz.dylib */; };
 		AC6C6E061ACC33C9005F274A /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6C6E051ACC33C9005F274A /* Post.m */; };
+		AC6C6E091ACC5401005F274A /* AppSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6C6E081ACC5401005F274A /* AppSingleton.m */; };
 		ACDC50DE1ACAA1620034F9A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDC50DD1ACAA1620034F9A1 /* main.m */; };
 		ACDC50E11ACAA1620034F9A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDC50E01ACAA1620034F9A1 /* AppDelegate.m */; };
 		ACDC50E41ACAA1620034F9A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDC50E31ACAA1620034F9A1 /* ViewController.m */; };
@@ -48,6 +49,8 @@
 		AC6C6E001ACC27EB005F274A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		AC6C6E021ACC2BF1005F274A /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
 		AC6C6E051ACC33C9005F274A /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		AC6C6E071ACC5112005F274A /* AppSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSingleton.h; sourceTree = "<group>"; };
+		AC6C6E081ACC5401005F274A /* AppSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppSingleton.m; sourceTree = "<group>"; };
 		ACDC50D81ACAA1620034F9A1 /* MyLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACDC50DC1ACAA1620034F9A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACDC50DD1ACAA1620034F9A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -134,6 +137,8 @@
 				AC6C6DF21ACC2328005F274A /* Settings.bundle */,
 				AC6C6E021ACC2BF1005F274A /* Post.h */,
 				AC6C6E051ACC33C9005F274A /* Post.m */,
+				AC6C6E071ACC5112005F274A /* AppSingleton.h */,
+				AC6C6E081ACC5401005F274A /* AppSingleton.m */,
 			);
 			path = MyLife;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 				ACDC50E11ACAA1620034F9A1 /* AppDelegate.m in Sources */,
 				ACDC51041ACAE3B00034F9A1 /* DBHandler.m in Sources */,
 				ACDC50DE1ACAA1620034F9A1 /* main.m in Sources */,
+				AC6C6E091ACC5401005F274A /* AppSingleton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
