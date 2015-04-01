@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC6C6DF31ACC2328005F274A /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC6C6DF21ACC2328005F274A /* Settings.bundle */; };
+		AC6C6DF51ACC274E005F274A /* Dropbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6C6DF41ACC274E005F274A /* Dropbox.framework */; };
+		AC6C6DF71ACC2767005F274A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6C6DF61ACC2767005F274A /* CFNetwork.framework */; };
+		AC6C6DF91ACC2784005F274A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6C6DF81ACC2784005F274A /* Security.framework */; };
+		AC6C6DFB1ACC2791005F274A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6C6DFA1ACC2791005F274A /* SystemConfiguration.framework */; };
+		AC6C6DFD1ACC27AE005F274A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6C6DFC1ACC27AE005F274A /* QuartzCore.framework */; };
+		AC6C6DFF1ACC27CE005F274A /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6C6DFE1ACC27CE005F274A /* libc++.dylib */; };
+		AC6C6E011ACC27EB005F274A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6C6E001ACC27EB005F274A /* libz.dylib */; };
+		AC6C6E061ACC33C9005F274A /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6C6E051ACC33C9005F274A /* Post.m */; };
 		ACDC50DE1ACAA1620034F9A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDC50DD1ACAA1620034F9A1 /* main.m */; };
 		ACDC50E11ACAA1620034F9A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDC50E01ACAA1620034F9A1 /* AppDelegate.m */; };
 		ACDC50E41ACAA1620034F9A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDC50E31ACAA1620034F9A1 /* ViewController.m */; };
@@ -29,6 +38,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC6C6DF21ACC2328005F274A /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		AC6C6DF41ACC274E005F274A /* Dropbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Dropbox.framework; path = "../../Downloads/dropbox-ios-sync-sdk-3.1.2/Dropbox.framework"; sourceTree = "<group>"; };
+		AC6C6DF61ACC2767005F274A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AC6C6DF81ACC2784005F274A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AC6C6DFA1ACC2791005F274A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AC6C6DFC1ACC27AE005F274A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AC6C6DFE1ACC27CE005F274A /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		AC6C6E001ACC27EB005F274A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		AC6C6E021ACC2BF1005F274A /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		AC6C6E051ACC33C9005F274A /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 		ACDC50D81ACAA1620034F9A1 /* MyLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACDC50DC1ACAA1620034F9A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACDC50DD1ACAA1620034F9A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -52,7 +71,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC6C6E011ACC27EB005F274A /* libz.dylib in Frameworks */,
+				AC6C6DFF1ACC27CE005F274A /* libc++.dylib in Frameworks */,
+				AC6C6DFD1ACC27AE005F274A /* QuartzCore.framework in Frameworks */,
+				AC6C6DFB1ACC2791005F274A /* SystemConfiguration.framework in Frameworks */,
+				AC6C6DF91ACC2784005F274A /* Security.framework in Frameworks */,
+				AC6C6DF71ACC2767005F274A /* CFNetwork.framework in Frameworks */,
 				ACDC51071ACAE4F80034F9A1 /* libsqlite3.dylib in Frameworks */,
+				AC6C6DF51ACC274E005F274A /* Dropbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +95,13 @@
 		ACDC50CF1ACAA1620034F9A1 = {
 			isa = PBXGroup;
 			children = (
+				AC6C6E001ACC27EB005F274A /* libz.dylib */,
+				AC6C6DFE1ACC27CE005F274A /* libc++.dylib */,
+				AC6C6DFC1ACC27AE005F274A /* QuartzCore.framework */,
+				AC6C6DFA1ACC2791005F274A /* SystemConfiguration.framework */,
+				AC6C6DF81ACC2784005F274A /* Security.framework */,
+				AC6C6DF61ACC2767005F274A /* CFNetwork.framework */,
+				AC6C6DF41ACC274E005F274A /* Dropbox.framework */,
 				ACDC51061ACAE4F80034F9A1 /* libsqlite3.dylib */,
 				ACDC50DA1ACAA1620034F9A1 /* MyLife */,
 				ACDC50F41ACAA1620034F9A1 /* MyLifeTests */,
@@ -98,6 +131,9 @@
 				ACDC50DB1ACAA1620034F9A1 /* Supporting Files */,
 				ACDC51031ACAE3B00034F9A1 /* DBHandler.m */,
 				ACDC51051ACAE3CC0034F9A1 /* DBHandler.h */,
+				AC6C6DF21ACC2328005F274A /* Settings.bundle */,
+				AC6C6E021ACC2BF1005F274A /* Post.h */,
+				AC6C6E051ACC33C9005F274A /* Post.m */,
 			);
 			path = MyLife;
 			sourceTree = "<group>";
@@ -208,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC6C6DF31ACC2328005F274A /* Settings.bundle in Resources */,
 				ACDC50E71ACAA1620034F9A1 /* Main.storyboard in Resources */,
 				ACDC50EC1ACAA1620034F9A1 /* LaunchScreen.xib in Resources */,
 				ACDC50E91ACAA1620034F9A1 /* Images.xcassets in Resources */,
@@ -228,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC6C6E061ACC33C9005F274A /* Post.m in Sources */,
 				ACDC50E41ACAA1620034F9A1 /* ViewController.m in Sources */,
 				ACDC50E11ACAA1620034F9A1 /* AppDelegate.m in Sources */,
 				ACDC51041ACAE3B00034F9A1 /* DBHandler.m in Sources */,
@@ -355,6 +393,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Guest/Downloads/dropbox-ios-sync-sdk-3.1.2",
+				);
 				INFOPLIST_FILE = MyLife/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -366,6 +408,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Guest/Downloads/dropbox-ios-sync-sdk-3.1.2",
+				);
 				INFOPLIST_FILE = MyLife/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
