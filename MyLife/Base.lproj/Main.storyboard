@@ -81,6 +81,45 @@
             </objects>
             <point key="canvasLocation" x="548" y="456"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="9Yh-3U-TSo">
+            <objects>
+                <viewController id="hAH-Yi-zB6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YAh-Xb-KVf"/>
+                        <viewControllerLayoutGuide type="bottom" id="cIf-0Q-MGa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tb4-pd-MVz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eGl-m2-1yd">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Event Name" id="AZS-yT-VLP">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="mdM-Yu-0Xi">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="WSQ-z0-aQI"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iXf-eM-4ja">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Home" id="hdf-bS-jc0"/>
+                                    <barButtonItem title="Delete Event" id="hfT-5g-kXy"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aXM-PY-blH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="579" y="1164"/>
+        </scene>
         <!--Title-->
         <scene sceneID="erd-TD-c7T">
             <objects>
@@ -96,62 +135,66 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nbs-3j-xKQ">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <items>
-                                    <barButtonItem title="Camera" id="OTu-Ji-sfx"/>
+                                    <barButtonItem systemItem="camera" id="OTu-Ji-sfx"/>
                                     <barButtonItem title="Gallery" id="F4W-Wa-o4W"/>
                                     <barButtonItem title="Home" id="Voy-yd-ToG"/>
                                     <barButtonItem title="Video" id="y7P-nK-udc"/>
                                     <barButtonItem title="Voiceover" id="WU7-qT-Vln"/>
                                 </items>
                             </toolbar>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYU-y7-YLd">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYU-y7-YLd">
                                 <rect key="frame" x="0.0" y="370" width="600" height="186"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0gu-Vo-jdU">
-                                        <rect key="frame" x="8" y="0.0" width="217" height="186"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HDc-jX-fPP">
-                                        <rect key="frame" x="233" y="0.0" width="217" height="186"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="672-X0-uWh">
-                                        <rect key="frame" x="458" y="0.0" width="217" height="186"/>
-                                    </imageView>
-                                </subviews>
+                                <gestureRecognizers/>
                             </scrollView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QoU-AI-c3f">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Name of the Event" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QoU-AI-c3f">
                                 <rect key="frame" x="0.0" y="44" width="600" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QRC-Jz-gbr">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="barTintColor" red="0.68625366580000002" green="0.59507547270000005" blue="0.99305555560000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Add" id="MkQ-pT-PQW">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="ZNP-5i-ze6">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="Ufk-vF-mKB"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Publish" id="mBy-G9-3R1"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="zfr-a6-Fz3">
+                                <rect key="frame" x="400" y="73" width="200" height="100"/>
+                                <date key="date" timeIntervalSinceReferenceDate="449591517.169909">
+                                    <!--2015-04-01 14:31:57 +0000-->
+                                </date>
+                            </datePicker>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q0f-ED-SfU">
-                                <rect key="frame" x="16" y="82" width="429" height="280"/>
+                                <rect key="frame" x="16" y="82" width="376" height="280"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="p4X-ha-tTE">
-                                <rect key="frame" x="453" y="141" width="147" height="162"/>
-                                <date key="date" timeIntervalSinceReferenceDate="449498352.91972297">
-                                    <!--2015-03-31 12:39:12 +0000-->
-                                </date>
-                            </datePicker>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QRC-Jz-gbr">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                <items>
-                                    <navigationItem title="Add" id="MkQ-pT-PQW"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="IYU-y7-YLd" secondAttribute="centerX" id="gJE-Vw-qFK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="6yS-j8-wHX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sNb-88-v6l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1348" y="550"/>
+            <point key="canvasLocation" x="1348" y="536"/>
         </scene>
     </scenes>
     <resources>
         <image name="2000px-Vertical-wavy-line-test" width="2000" height="10000"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ufk-vF-mKB"/>
+    </inferredMetricsTieBreakers>
 </document>
