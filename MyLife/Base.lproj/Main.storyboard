@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,33 +17,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LOE-0M-NqT">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LOE-0M-NqT">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="rHB-YR-Hln"/>
+                                </constraints>
                                 <items>
                                     <navigationItem id="nFv-Lg-REX">
                                         <barButtonItem key="rightBarButtonItem" title="Settings" id="gfJ-YY-04W"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Life" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8V-KC-XhK">
-                                <rect key="frame" x="242" y="44" width="116" height="74"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="My Life" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8V-KC-XhK">
+                                <rect key="frame" x="242" y="59" width="116" height="52"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="1" green="0.97854737259745794" blue="0.9873781462419865" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2000px-Vertical-wavy-line-test" translatesAutoresizingMaskIntoConstraints="NO" id="PT3-eV-LEt">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="2000px-Vertical-wavy-line-test" translatesAutoresizingMaskIntoConstraints="NO" id="PT3-eV-LEt">
                                 <rect key="frame" x="297" y="126" width="6" height="454"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="6" id="lvq-aI-aIl"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Z0-zl-kHb">
-                                <rect key="frame" x="431" y="285" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Z0-zl-kHb">
+                                <rect key="frame" x="311" y="285" width="289" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                 <state key="normal" title="View">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1Z-no-1Qi">
-                                <rect key="frame" x="124" y="285" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1Z-no-1Qi">
+                                <rect key="frame" x="0.0" y="285" width="303" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                 <state key="normal" title="Add">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -54,12 +61,27 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.62577308363544748" green="0.45811496660407813" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LOE-0M-NqT" firstAttribute="centerX" secondItem="s8V-KC-XhK" secondAttribute="centerX" id="1Us-pC-aso"/>
+                            <constraint firstItem="s8V-KC-XhK" firstAttribute="top" secondItem="LOE-0M-NqT" secondAttribute="bottom" constant="15" id="6E1-F7-TaF"/>
+                            <constraint firstAttribute="centerX" secondItem="s8V-KC-XhK" secondAttribute="centerX" id="Ca0-NE-hdX"/>
+                            <constraint firstItem="PT3-eV-LEt" firstAttribute="top" secondItem="s8V-KC-XhK" secondAttribute="bottom" constant="8" id="HAI-p3-eee"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9Z0-zl-kHb" secondAttribute="trailing" constant="-16" id="IQ1-z7-NYg"/>
+                            <constraint firstItem="LOE-0M-NqT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WNd-yM-8oi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PT3-eV-LEt" secondAttribute="bottom" constant="20" id="chY-BA-Xau"/>
+                            <constraint firstItem="9Z0-zl-kHb" firstAttribute="leading" secondItem="PT3-eV-LEt" secondAttribute="trailing" constant="8" id="ctu-eK-Dnr"/>
+                            <constraint firstAttribute="centerX" secondItem="PT3-eV-LEt" secondAttribute="centerX" id="fTU-3q-g6V"/>
+                            <constraint firstItem="LOE-0M-NqT" firstAttribute="leading" secondItem="b1Z-no-1Qi" secondAttribute="leading" id="hWL-Ea-0nf"/>
+                            <constraint firstItem="LOE-0M-NqT" firstAttribute="trailing" secondItem="9Z0-zl-kHb" secondAttribute="trailing" id="rvU-D4-Rtd"/>
+                            <constraint firstItem="PT3-eV-LEt" firstAttribute="leading" secondItem="b1Z-no-1Qi" secondAttribute="trailing" constant="-6" id="vmc-Lf-RD8"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="548" y="456"/>
         </scene>
-        <!--Add-->
+        <!--Title-->
         <scene sceneID="erd-TD-c7T">
             <objects>
                 <viewController id="mrn-XS-2cf" sceneMemberID="viewController">
