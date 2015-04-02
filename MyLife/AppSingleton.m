@@ -12,6 +12,7 @@
 @implementation AppSingleton
 
 @synthesize postsList;
+@synthesize dbHandler;
 
 #pragma mark Singleton Methods
 
@@ -27,8 +28,18 @@
 - (id)init {
     if (self = [super init]) {
         postsList = [NSMutableArray init];
+        dbHandler = [DBHandler init];
     }
     return self;
+}
+
+- (void)updatePostList:(Post *)post{
+    [postsList addObject:post];
+    [dbHandler saveData:post];
+}
+
+- (void)populatePostList{
+    [postsList addObjectsFromArray:[dbHandler retrievePosts]];
 }
 
 - (void)dealloc {

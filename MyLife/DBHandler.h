@@ -13,6 +13,7 @@
 
 #import <Foundation/Foundation.h>
 #import <sqlite3.h>
+#import "Post.h"
 
 @interface DBHandler : NSObject
 {
@@ -33,21 +34,19 @@
 
 /**
  * This function saves one post in the app database
- * @param idNumber identificator of the post
- * @param date of the post
- * @param title of the post
- * @param text of the post
+ * @param post to save
  * @return true if the insertion succeded, false otherwise
  **/
--(BOOL) saveData:(NSString*)idNumber date:(NSString*)date
-      title:(NSString*)title text:(NSString*)text;
+-(BOOL) saveData:(Post*)post;
 
 /**
  * This function allows the retrieval of posts by their identificator
  * @param idNumber identificator of the post
  * @return a NSArray containing the corresponding row, false otherwise
  **/
--(NSArray*) findByIdNumber:(NSString*)idNumber;
+-(Post*) findByIdNumber:(NSString*)idNumber;
+
+-(NSMutableArray*) retrievePosts;
 
 @end
 

@@ -24,12 +24,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyLife/Post.h"
-            timestampString = "449595111.149376"
+            timestampString = "449678401.565121"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "-setDate:"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "-setTitle:"
             landmarkType = "4">
          </BreakpointContent>
       </BreakpointProxy>

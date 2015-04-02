@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppSingleton.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

@@ -10,13 +10,20 @@
 #define MyLife_AppSingleton_h
 
 #import <Foundation/Foundation.h>
+#import "DBHandler.h"
 
 @interface AppSingleton : NSObject {
-    NSMutableArray *postsList;
+    NSMutableArray * postsList;
+    DBHandler * dbHandler;
 }
 
 @property (nonatomic, retain) NSMutableArray *postsList;
+@property (nonatomic, retain) DBHandler * dbHandler;
 
 + (id)sharedAppSingleton;
+- (void)updatePostList:(Post *)post;
+- (void)populatePostList;
 
 @end
+
+#endif

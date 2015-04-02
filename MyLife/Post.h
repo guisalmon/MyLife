@@ -20,10 +20,17 @@
     NSMutableArray *mMediaPaths ;
 }
 
+
+- (Post *) init;
 - (void) setDate: (NSDate*) date;
+- (void) setDateFromString: (NSString*) date;
+- (NSString*) mDateToString;
 - (void) setTitle: (NSString*) title;
+- (NSString*) mTitle;
 - (void) setText: (NSString*) text;
+- (NSString*) mText;
 - (void) setVoiceoverPath: (NSString*) path;
+- (NSString*) mVoiceOverPath;
 - (bool) addMediaPath: (NSString*) path;
 @end
 
