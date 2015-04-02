@@ -20,3 +20,5 @@
 + (id)sharedAppSingleton;
 
 @end
+
+#endif

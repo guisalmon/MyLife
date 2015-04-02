@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AC6C6DF31ACC2328005F274A /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC6C6DF21ACC2328005F274A /* Settings.bundle */; };
-		AC6C6DF51ACC274E005F274A /* Dropbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6C6DF41ACC274E005F274A /* Dropbox.framework */; };
 		AC6C6DF71ACC2767005F274A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6C6DF61ACC2767005F274A /* CFNetwork.framework */; };
 		AC6C6DF91ACC2784005F274A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6C6DF81ACC2784005F274A /* Security.framework */; };
 		AC6C6DFB1ACC2791005F274A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6C6DFA1ACC2791005F274A /* SystemConfiguration.framework */; };
@@ -81,7 +80,6 @@
 				AC6C6DF91ACC2784005F274A /* Security.framework in Frameworks */,
 				AC6C6DF71ACC2767005F274A /* CFNetwork.framework in Frameworks */,
 				ACDC51071ACAE4F80034F9A1 /* libsqlite3.dylib in Frameworks */,
-				AC6C6DF51ACC274E005F274A /* Dropbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
