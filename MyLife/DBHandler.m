@@ -132,6 +132,7 @@ static sqlite3_stmt *statement = nil;
                 stringCount = [[NSString alloc] initWithUTF8String: (const char *) sqlite3_column_text(statement, 0)];
                 int count = [stringCount intValue];
                 for (int a = 0; a < count; a++) {
+                    NSLog(@"row no: %d", a);
                     Post* curPost = [self findByIdNumber:[NSString stringWithFormat:@"%d", a]];
                     [postList addObject:curPost];
                 }

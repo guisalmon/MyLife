@@ -10,10 +10,6 @@
 
 @implementation Post
 
-- (Post*) init {
-    return [self init];
-}
-
 - (NSString *)mDateToString {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat: @"dd-mm-yyyy HH:mm:ss"];
@@ -61,6 +57,10 @@
     }
     [mMediaPaths addObject:(path)];
     return YES;
+}
+
+- (NSString *) toString{
+    return [NSString stringWithFormat:@"%@ %@ at %@, voice here %@", mTitle, mText, [self mDateToString], mVoiceoverPath];
 }
 
 @end

@@ -19,9 +19,10 @@
 + (id)sharedAppSingleton {
     static AppSingleton *sharedAppSingleton = nil;
     static dispatch_once_t onceToken;
-    NSLog(@"Singleton created");
+    NSLog(@"Singleton called");
     dispatch_once(&onceToken, ^{
         sharedAppSingleton = [[self alloc] init];
+        NSLog(@"Singleton created");
     });
     return sharedAppSingleton;
 }
