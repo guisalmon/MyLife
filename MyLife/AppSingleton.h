@@ -26,4 +26,8 @@
 
 @end
 
+<<<<<<< HEAD
 #endif
+=======
+#endif
+>>>>>>> b889f6974de7b9bc481db7d57658f0f5d276b82f
