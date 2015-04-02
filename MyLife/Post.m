@@ -57,7 +57,7 @@
 - (bool) addMediaPath: (NSString*) path {
     if (path == nil) return NO;
     if ([mMediaPaths count] == 0) {
-        mMediaPaths = [NSMutableArray init];
+        mMediaPaths = [NSMutableArray array];
     }
     [mMediaPaths addObject:(path)];
     return YES;

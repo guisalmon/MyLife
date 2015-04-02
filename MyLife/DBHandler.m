@@ -19,12 +19,15 @@ static sqlite3_stmt *statement = nil;
         sharedInstance = [[super allocWithZone:NULL]init];
         [sharedInstance createDB];
     }
+    NSLog(@"db shared instance");
     return sharedInstance;
 }
 
 
 
 -(BOOL) createDB {
+    NSLog(@"db creation called");
+
     NSString *docsDir;
     NSArray *dirPaths;
     // Get the documents directory
@@ -125,7 +128,7 @@ static sqlite3_stmt *statement = nil;
         if (sqlite3_prepare_v2(database, query_stmt, -1, &statement, NULL) == SQLITE_OK) {
             
             if (sqlite3_step(statement) == SQLITE_ROW) {
-                NSMutableArray *postList = [NSMutableArray init];
+                NSMutableArray *postList = [NSMutableArray array];
                 stringCount = [[NSString alloc] initWithUTF8String: (const char *) sqlite3_column_text(statement, 0)];
                 int count = [stringCount intValue];
                 for (int a = 0; a < count; a++) {

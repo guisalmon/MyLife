@@ -19,6 +19,7 @@
 + (id)sharedAppSingleton {
     static AppSingleton *sharedAppSingleton = nil;
     static dispatch_once_t onceToken;
+    NSLog(@"Singleton created");
     dispatch_once(&onceToken, ^{
         sharedAppSingleton = [[self alloc] init];
     });
@@ -27,8 +28,9 @@
 
 - (id)init {
     if (self = [super init]) {
-        postsList = [NSMutableArray init];
-        dbHandler = [DBHandler init];
+        postsList = [NSMutableArray array];
+        dbHandler = [DBHandler getSharedInstance];
+        NSLog(@"Singleton init");
     }
     return self;
 }
@@ -39,6 +41,7 @@
 }
 
 - (void)populatePostList{
+    NSLog(@"populate post list");
     [postsList addObjectsFromArray:[dbHandler retrievePosts]];
 }
 
