@@ -39,7 +39,6 @@
 
 /* Begin PBXFileReference section */
 		AC6C6DF21ACC2328005F274A /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		AC6C6DF41ACC274E005F274A /* Dropbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Dropbox.framework; path = "../../Downloads/dropbox-ios-sync-sdk-3.1.2/Dropbox.framework"; sourceTree = "<group>"; };
 		AC6C6DF61ACC2767005F274A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		AC6C6DF81ACC2784005F274A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		AC6C6DFA1ACC2791005F274A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -102,7 +101,6 @@
 				AC6C6DFA1ACC2791005F274A /* SystemConfiguration.framework */,
 				AC6C6DF81ACC2784005F274A /* Security.framework */,
 				AC6C6DF61ACC2767005F274A /* CFNetwork.framework */,
-				AC6C6DF41ACC274E005F274A /* Dropbox.framework */,
 				ACDC51061ACAE4F80034F9A1 /* libsqlite3.dylib */,
 				ACDC50DA1ACAA1620034F9A1 /* MyLife */,
 				ACDC50F41ACAA1620034F9A1 /* MyLifeTests */,

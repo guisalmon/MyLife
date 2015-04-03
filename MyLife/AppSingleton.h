@@ -14,11 +14,9 @@
 
 @interface AppSingleton : NSObject {
     NSMutableArray * postsList;
-    DBHandler * dbHandler;
 }
 
 @property (nonatomic, retain) NSMutableArray *postsList;
-@property (nonatomic, retain) DBHandler * dbHandler;
 
 + (id)sharedAppSingleton;
 - (void)updatePostList:(Post *)post;

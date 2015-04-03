@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    NSLog(@"launch finished");
+    NSLog(@"App: launch finished");
     [[AppSingleton sharedAppSingleton] populatePostList];
     return YES;
 }
@@ -35,23 +35,23 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
     
-    NSLog(@"App enters foreground");
+    NSLog(@"App: enters foreground");
     
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    NSLog(@"App active");
+    NSLog(@"App: active");
     Post* post = [[Post alloc] init];
     [post setTitle:@"test1"];
     [post setText:@"test1text"];
     [post setVoiceoverPath:@"somewhere on your phone"];
     [post setDate:[NSDate date]];
     [[AppSingleton sharedAppSingleton] updatePostList:post];
-    NSLog([post toString]);
+    NSLog(@"App: %@", [post toString]);
     
     //TO FIX !!!!
+    [[AppSingleton sharedAppSingleton] populatePostList];
     
-    //NSLog([[[DBHandler getSharedInstance] findByIdNumber:@"0"] toString]);
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 

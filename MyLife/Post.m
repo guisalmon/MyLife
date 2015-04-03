@@ -12,7 +12,7 @@
 
 - (NSString *)mDateToString {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat: @"dd-mm-yyyy HH:mm:ss"];
+    [formatter setDateFormat: @"dd-MM-yyyy HH:mm:ss"];
     return [formatter stringFromDate:mDate];
 }
 
@@ -34,7 +34,7 @@
 
 - (void) setDateFromString:(NSString *)date {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat: @"dd-mm-yyyy HH:mm:ss"];
+    [formatter setDateFormat: @"dd-MM-yyyy HH:mm:ss"];
     mDate = [formatter dateFromString:date];
 }
 
