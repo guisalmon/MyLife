@@ -12,34 +12,36 @@
 @implementation AppSingleton
 
 @synthesize postsList;
-@synthesize dbHandler;
 
 #pragma mark Singleton Methods
 
 + (id)sharedAppSingleton {
     static AppSingleton *sharedAppSingleton = nil;
     static dispatch_once_t onceToken;
+    NSLog(@"Singleton: called");
     dispatch_once(&onceToken, ^{
         sharedAppSingleton = [[self alloc] init];
+        NSLog(@"Singleton: created");
     });
     return sharedAppSingleton;
 }
 
 - (id)init {
     if (self = [super init]) {
-        postsList = [NSMutableArray init];
-        dbHandler = [DBHandler init];
+        postsList = [NSMutableArray array];
+        NSLog(@"Singleton: init");
     }
     return self;
 }
 
 - (void)updatePostList:(Post *)post{
     [postsList addObject:post];
-    [dbHandler saveData:post];
+    [[DBHandler getSharedInstance] saveData:post];
 }
 
 - (void)populatePostList{
-    [postsList addObjectsFromArray:[dbHandler retrievePosts]];
+    NSLog(@"Singleton: populate post list");
+    [postsList addObjectsFromArray:[[DBHandler getSharedInstance] retrievePosts]];
 }
 
 - (void)dealloc {

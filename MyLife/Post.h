@@ -21,7 +21,6 @@
 }
 
 
-- (Post *) init;
 - (void) setDate: (NSDate*) date;
 - (void) setDateFromString: (NSString*) date;
 - (NSString*) mDateToString;
@@ -32,6 +31,7 @@
 - (void) setVoiceoverPath: (NSString*) path;
 - (NSString*) mVoiceOverPath;
 - (bool) addMediaPath: (NSString*) path;
+- (NSString*) toString;
 @end
 
 #endif

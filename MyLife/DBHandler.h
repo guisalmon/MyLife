@@ -48,6 +48,8 @@
 
 -(NSMutableArray*) retrievePosts;
 
+- (BOOL) eraseAllData;
+
 @end
 
 #endif

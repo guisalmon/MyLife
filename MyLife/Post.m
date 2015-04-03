@@ -10,13 +10,9 @@
 
 @implementation Post
 
-- (Post*) init {
-    return [self init];
-}
-
 - (NSString *)mDateToString {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat: @"dd-mm-yyyy HH:mm:ss"];
+    [formatter setDateFormat: @"dd-MM-yyyy HH:mm:ss"];
     return [formatter stringFromDate:mDate];
 }
 
@@ -38,7 +34,7 @@
 
 - (void) setDateFromString:(NSString *)date {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat: @"dd-mm-yyyy HH:mm:ss"];
+    [formatter setDateFormat: @"dd-MM-yyyy HH:mm:ss"];
     mDate = [formatter dateFromString:date];
 }
 
@@ -57,10 +53,14 @@
 - (bool) addMediaPath: (NSString*) path {
     if (path == nil) return NO;
     if ([mMediaPaths count] == 0) {
-        mMediaPaths = [NSMutableArray init];
+        mMediaPaths = [NSMutableArray array];
     }
     [mMediaPaths addObject:(path)];
     return YES;
+}
+
+- (NSString *) toString{
+    return [NSString stringWithFormat:@"%@ %@ at %@, voice here %@", mTitle, mText, [self mDateToString], mVoiceoverPath];
 }
 
 @end
