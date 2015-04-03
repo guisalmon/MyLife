@@ -16,6 +16,7 @@
 		AC6C6E011ACC27EB005F274A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6C6E001ACC27EB005F274A /* libz.dylib */; };
 		AC6C6E061ACC33C9005F274A /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6C6E051ACC33C9005F274A /* Post.m */; };
 		AC6C6E091ACC5401005F274A /* AppSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6C6E081ACC5401005F274A /* AppSingleton.m */; };
+		AC78A04E1ACED66C00236EF6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AC78A04D1ACED66C00236EF6 /* .gitignore */; };
 		ACDC50DE1ACAA1620034F9A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDC50DD1ACAA1620034F9A1 /* main.m */; };
 		ACDC50E11ACAA1620034F9A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDC50E01ACAA1620034F9A1 /* AppDelegate.m */; };
 		ACDC50E41ACAA1620034F9A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDC50E31ACAA1620034F9A1 /* ViewController.m */; };
@@ -49,6 +50,7 @@
 		AC6C6E051ACC33C9005F274A /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 		AC6C6E071ACC5112005F274A /* AppSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSingleton.h; sourceTree = "<group>"; };
 		AC6C6E081ACC5401005F274A /* AppSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppSingleton.m; sourceTree = "<group>"; };
+		AC78A04D1ACED66C00236EF6 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		ACDC50D81ACAA1620034F9A1 /* MyLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACDC50DC1ACAA1620034F9A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACDC50DD1ACAA1620034F9A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		ACDC50CF1ACAA1620034F9A1 = {
 			isa = PBXGroup;
 			children = (
+				AC78A04D1ACED66C00236EF6 /* .gitignore */,
 				AC6C6E001ACC27EB005F274A /* libz.dylib */,
 				AC6C6DFE1ACC27CE005F274A /* libc++.dylib */,
 				AC6C6DFC1ACC27AE005F274A /* QuartzCore.framework */,
@@ -245,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC78A04E1ACED66C00236EF6 /* .gitignore in Resources */,
 				AC6C6DF31ACC2328005F274A /* Settings.bundle in Resources */,
 				ACDC50E71ACAA1620034F9A1 /* Main.storyboard in Resources */,
 				ACDC50EC1ACAA1620034F9A1 /* LaunchScreen.xib in Resources */,
