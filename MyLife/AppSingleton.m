@@ -35,8 +35,22 @@
 }
 
 - (void)updatePostList:(Post *)post{
-    [postsList addObject:post];
     [[DBHandler getSharedInstance] saveData:post];
+    [postsList addObject:post];
+    for(Post *p in postsList) {
+        NSLog(@"%@", [p toString]);
+    }
+}
+- (void)updatePostList:(NSString*)title :(NSString*)text :(NSDate*)date :(NSString*)voiceoverPath :(NSMutableArray*)mediaPaths {
+    Post * post = [Post new];
+    [post setTitle:title];
+    [post setText:text];
+    [post setDate:date];
+    [post setVoiceoverPath:voiceoverPath];
+    for(NSString * s in mediaPaths){
+        [post addMediaPath:s];
+    }
+    [self updatePostList:post];
 }
 
 - (void)populatePostList{

@@ -20,6 +20,7 @@
 
 + (id)sharedAppSingleton;
 - (void)updatePostList:(Post *)post;
+- (void)updatePostList:(NSString*)title :(NSString*)text :(NSDate*)date :(NSString*)voiceoverPath :(NSMutableArray*)mediaPaths;
 - (void)populatePostList;
 
 @end

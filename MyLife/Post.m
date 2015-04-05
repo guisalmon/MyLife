@@ -72,7 +72,11 @@
 }
 
 - (NSString *) toString{
-    return [NSString stringWithFormat:@"%@ %@ at %@, voice here %@", mTitle, mText, [self mDateToString], mVoiceoverPath];
+    NSMutableString* medias = [NSMutableString stringWithString:@""];
+    for(NSString *s in mMediaPaths){
+        [medias appendFormat:@"%@, ", s];
+    }
+    return [NSString stringWithFormat:@"#%lli: %@ %@ at %@, voice here %@ \nMedias: %@", mIdno, mTitle, mText, [self mDateToString], mVoiceoverPath, medias];
 }
 
 @end
