@@ -41,6 +41,7 @@
         NSLog(@"%@", [p toString]);
     }
 }
+
 - (void)updatePostList:(NSString*)title :(NSString*)text :(NSDate*)date :(NSString*)voiceoverPath :(NSMutableArray*)mediaPaths {
     Post * post = [Post new];
     [post setTitle:title];
