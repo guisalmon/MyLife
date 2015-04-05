@@ -46,7 +46,29 @@
     [post setText:@"test1text"];
     [post setVoiceoverPath:@"somewhere on your phone"];
     [post setDate:[NSDate date]];
+    [post addMediaPath:@"media11"];
+    [post addMediaPath:@"media12"];
+    [post addMediaPath:@"media13"];
     [[AppSingleton sharedAppSingleton] updatePostList:post];
+    [[post mMediaPaths] removeAllObjects];
+    [post setTitle:@"test2"];
+    [post setText:@"test2text"];
+    [post setVoiceoverPath:@"somewhere on your phone"];
+    [post setDate:[NSDate date]];
+    [post addMediaPath:@"media21"];
+    [post addMediaPath:@"media22"];
+    [post addMediaPath:@"media23"];
+    [[AppSingleton sharedAppSingleton] updatePostList:post];
+    [[post mMediaPaths] removeAllObjects];
+    [post setTitle:@"test3"];
+    [post setText:@"test3text"];
+    [post setVoiceoverPath:@"somewhere on your phone"];
+    [post setDate:[NSDate date]];
+    [post addMediaPath:@"media31"];
+    [post addMediaPath:@"media32"];
+    [post addMediaPath:@"media33"];
+    [[AppSingleton sharedAppSingleton] updatePostList:post];
+    [[post mMediaPaths] removeAllObjects];
     NSLog(@"App: %@", [post toString]);
     
     //TO FIX !!!!

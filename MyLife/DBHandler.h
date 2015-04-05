@@ -24,29 +24,26 @@
  * This function gets the current instance of the database for the app or if none exists creates one
  * @return a DBHandler reference or null
  **/
-+(DBHandler*)getSharedInstance;
++ (DBHandler*)getSharedInstance;
 
 /**
  * This function creates a new DB
  * @return true if the DB was created, false otherwise
  **/
--(BOOL) createDB;
+- (BOOL) createDB;
 
 /**
  * This function saves one post in the app database
  * @param post to save
  * @return true if the insertion succeded, false otherwise
  **/
--(BOOL) saveData:(Post*)post;
+- (BOOL) saveData:(Post*)post;
 
-/**
- * This function allows the retrieval of posts by their identificator
- * @param idNumber identificator of the post
- * @return a NSArray containing the corresponding row, false otherwise
- **/
--(Post*) findByIdNumber:(NSString*)idNumber;
+- (BOOL) saveMedia:(Post*)post;
 
--(NSMutableArray*) retrievePosts;
+- (NSMutableArray*) retrievePosts;
+
+- (NSMutableArray*) retrieveMediaforPosts:(NSMutableArray*)posts;
 
 - (BOOL) eraseAllData;
 

@@ -10,6 +10,10 @@
 
 @implementation Post
 
+- (long long) mIdno {
+    return mIdno;
+}
+
 - (NSString *)mDateToString {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat: @"dd-MM-yyyy HH:mm:ss"];
@@ -26,6 +30,14 @@
 
 - (NSString *)mTitle {
     return mTitle;
+}
+
+- (NSMutableArray*) mMediaPaths{
+    return mMediaPaths;
+}
+
+- (void) setIdno:(long long)idno {
+    mIdno = idno;
 }
 
 - (void) setDate: (NSDate*) date {

@@ -13,6 +13,7 @@
 
 @interface Post : NSObject {
     @private
+    long long mIdno;
     NSDate *mDate ;
     NSString *mTitle ;
     NSString *mText ;
@@ -20,7 +21,8 @@
     NSMutableArray *mMediaPaths ;
 }
 
-
+- (void) setIdno: (long long) idno;
+- (long long) mIdno;
 - (void) setDate: (NSDate*) date;
 - (void) setDateFromString: (NSString*) date;
 - (NSString*) mDateToString;
@@ -32,6 +34,7 @@
 - (NSString*) mVoiceOverPath;
 - (bool) addMediaPath: (NSString*) path;
 - (NSString*) toString;
+- (NSMutableArray*) mMediaPaths;
 @end
 
 #endif
