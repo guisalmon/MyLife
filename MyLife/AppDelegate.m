@@ -46,7 +46,7 @@
     [m addObject:@"media 11"];
     [m addObject:@"media 12"];
     [m addObject:@"media 13"];
-    [[AppSingleton sharedAppSingleton] updatePostList:@"test1" :@"test1 text" :[NSDate date] :@"Voiceover here 1" :m];
+    [[AppSingleton sharedAppSingleton] updatePostList:@"test1" :@"test1 text" :[NSDate date] :@"" :m];
     
     m = [NSMutableArray array];
     [m addObject:@"media 21"];
