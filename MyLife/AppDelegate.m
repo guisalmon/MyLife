@@ -41,38 +41,25 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     NSLog(@"App: active");
-    Post* post = [[Post alloc] init];
-    [post setTitle:@"test1"];
-    [post setText:@"test1text"];
-    [post setVoiceoverPath:@"somewhere on your phone"];
-    [post setDate:[NSDate date]];
-    [post addMediaPath:@"media11"];
-    [post addMediaPath:@"media12"];
-    [post addMediaPath:@"media13"];
-    [[AppSingleton sharedAppSingleton] updatePostList:post];
-    [[post mMediaPaths] removeAllObjects];
-    [post setTitle:@"test2"];
-    [post setText:@"test2text"];
-    [post setVoiceoverPath:@"somewhere on your phone"];
-    [post setDate:[NSDate date]];
-    [post addMediaPath:@"media21"];
-    [post addMediaPath:@"media22"];
-    [post addMediaPath:@"media23"];
-    [[AppSingleton sharedAppSingleton] updatePostList:post];
-    [[post mMediaPaths] removeAllObjects];
-    [post setTitle:@"test3"];
-    [post setText:@"test3text"];
-    [post setVoiceoverPath:@"somewhere on your phone"];
-    [post setDate:[NSDate date]];
-    [post addMediaPath:@"media31"];
-    [post addMediaPath:@"media32"];
-    [post addMediaPath:@"media33"];
-    [[AppSingleton sharedAppSingleton] updatePostList:post];
-    [[post mMediaPaths] removeAllObjects];
-    NSLog(@"App: %@", [post toString]);
     
-    //TO FIX !!!!
-    [[AppSingleton sharedAppSingleton] populatePostList];
+    NSMutableArray * m = [NSMutableArray array];
+    [m addObject:@"media 11"];
+    [m addObject:@"media 12"];
+    [m addObject:@"media 13"];
+    [[AppSingleton sharedAppSingleton] updatePostList:@"test1" :@"test1 text" :[NSDate date] :@"Voiceover here 1" :m];
+    
+    m = [NSMutableArray array];
+    [m addObject:@"media 21"];
+    [m addObject:@"media 22"];
+    [m addObject:@"media 23"];
+    [[AppSingleton sharedAppSingleton] updatePostList:@"test2" :@"test2 text" :[NSDate date] :@"Voiceover here 2" :m];
+    
+    m = [NSMutableArray array];
+    [m addObject:@"media 31"];
+    [m addObject:@"media 32"];
+    [m addObject:@"media 33"];
+    [[AppSingleton sharedAppSingleton] updatePostList:@"test3" :@"test3 text" :[NSDate date] :@"Voiceover here 3" :m];
+    
     
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
