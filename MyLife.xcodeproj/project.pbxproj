@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC64B8AE1AD5599C003E91A3 /* ViewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC64B8AD1AD5599C003E91A3 /* ViewTableViewController.m */; };
 		AC6C6DF31ACC2328005F274A /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC6C6DF21ACC2328005F274A /* Settings.bundle */; };
 		AC6C6DF71ACC2767005F274A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6C6DF61ACC2767005F274A /* CFNetwork.framework */; };
 		AC6C6DF91ACC2784005F274A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6C6DF81ACC2784005F274A /* Security.framework */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC64B8AC1AD5599C003E91A3 /* ViewTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewTableViewController.h; sourceTree = "<group>"; };
+		AC64B8AD1AD5599C003E91A3 /* ViewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewTableViewController.m; sourceTree = "<group>"; };
 		AC6C6DF21ACC2328005F274A /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		AC6C6DF61ACC2767005F274A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		AC6C6DF81ACC2784005F274A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -138,6 +141,8 @@
 				AC6C6E051ACC33C9005F274A /* Post.m */,
 				AC6C6E071ACC5112005F274A /* AppSingleton.h */,
 				AC6C6E081ACC5401005F274A /* AppSingleton.m */,
+				AC64B8AC1AD5599C003E91A3 /* ViewTableViewController.h */,
+				AC64B8AD1AD5599C003E91A3 /* ViewTableViewController.m */,
 			);
 			path = MyLife;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 			files = (
 				AC6C6E061ACC33C9005F274A /* Post.m in Sources */,
 				ACDC50E41ACAA1620034F9A1 /* ViewController.m in Sources */,
+				AC64B8AE1AD5599C003E91A3 /* ViewTableViewController.m in Sources */,
 				ACDC50E11ACAA1620034F9A1 /* AppDelegate.m in Sources */,
 				ACDC51041ACAE3B00034F9A1 /* DBHandler.m in Sources */,
 				ACDC50DE1ACAA1620034F9A1 /* main.m in Sources */,
